@@ -16,19 +16,32 @@ function numberRange (numberInput) {
   for(var i=0; i<=numberInput; i++){
     newRange.push(i);
     var stringRange= newRange.toString();
-    if (stringRange.match(/[1]/)){
-      output = stringRange.replace(/[1]/, 'beep');
+
+    if (stringRange.match('1')){
+      var beep = stringRange.replace('1', 'beep');
+
+      if (beep.match('2')) {
+      var boop = beep.replace('2', 'boop');
+
+        if (boop.match('3')){
+        output = boop.replace('3', "Im sorry Dave, but I can't do that.")
+        console.log(output);
+        }
+      }
+
     }
-
-    if (stringRange.match(/[2]/)) {
-       output = stringRange.replace(/[2]/, 'boop');
-    }
-
-    if (stringRange.match(/[3]/)) {
-       output = stringRange.replace(/[3]/, "I'm sorry Dave, but I'm afraid I cannot do that");
-    }
+    // if (boop.match('3')){
+    //   output = boop.replace('3', "I'm sorry Dave, but I can't do that.")
+    //   console.log(output);
+    // }
 
 
-      console.log(output);
+
+
+    // if (stringRange.match(/[3]/)) {
+    //    output = stringRange.replace(/[3]/, "I'm sorry Dave, but I'm afraid I can't do that");
+    // }
+
+
   }
 }
