@@ -13,8 +13,9 @@ function numberRange (numberInput) {
   var output= ''
   for(var i=0; i<=numberInput; i++){
     newRange.push(i);
-    var digits= newRange.toString();
+    var numberString= newRange.toString();
   }
+  var digits = numberString; 
   if (numberInput>100){
     alert("Please enter a number less than 100");
   } else {
