@@ -10,16 +10,34 @@ This webpage allows the user to enter in a number. It will return a range of num
 
 ## Specs
 
-1. Disregard all non-numeric input
-2. Return a range of numbers based on user input
-3. Deal with single digits:
-  3a. 1
-  3b. 2
-  3c. 3
-4. Deal with double digits:
-  4a. 1
-  4b. 2
-  4c. 3
+1. _Disregard all non-numeric input_
+  * Input: !!!, e
+  * Ouput: Nothing
+
+2. _Return a range of numbers based on user input_
+  * Input: 4
+  * Output: 0, 1, 2, 3, 4
+
+3. _Deal with single digits_
+  * Input: 1
+  * Output: beep
+
+  * Input: 2
+  * Output: boop
+
+  * Input: 3
+  * Output: "I'm sorry Dave, but I can't do that"
+
+4. _Deal with double digits based least to most important_
+
+  * Input: 11
+  * Output: beep
+
+  * Input: 22, 12, 21
+  * Output: boop
+
+  * Input: 13, 31, 23, 33
+  * Output: "I'm sorry Dave, but I can't do that. "
 
 
 ## Setup/Installation Requirements
