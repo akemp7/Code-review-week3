@@ -58,6 +58,7 @@ If there are any questions, contact: anita.k.kemp@gmail.com
 * Javascript, jQuery
 * HTML
 * Bootstrap
+* CSS
 
 ### License
 
