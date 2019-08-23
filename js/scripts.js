@@ -19,38 +19,37 @@ function numberRange (numberInput) {
 
 //takes care of single digits in a range of 0-9//
   if (stringRange.match('1')){
-    var beep = stringRange.replace('1', 'beep');
+    var toBeep = stringRange.replace('1', 'beep');
 
-    if (beep.match('2')) {
-      var boop = beep.replace('2', 'boop');
+    if (toBeep.match('2')) {
+      var toBoop = toBeep.replace('2', 'boop');
 
-      if (boop.match('3')){
-      var  double = boop.replace('3', "Im sorry Dave, but I can't do that.")
+      if (toBoop.match('3')){
+      var  hal = toBoop.replace('3', "I'm sorry, Dave. But I'm afraid can't do that.")
 
         }
       }
     }
 
   //takes care of double digits//
-  var doubleDigits = double;
-  if (doubleDigits.match(/[0-9][3]/g|/[3][0-9]/g) ) {
-      var digits = doubleDigits.replace(/[0-9][3]/g, "I'm sorry Dave, but I can't do that.");
-      var test = digits.replace(/[3][0-9][0-9]/g, "I'm sorry Dave, but I can't do that.");
-      output = test;
-  }
+  var doubleDigits = hal;
+  if (numberInput>100){
+    alert("Please enter a number less than 100");
+  } else if (doubleDigits.match(/[0-9][3]/g|/[3][0-9]/g) ) {
+      var digitThree = doubleDigits.replace(/[0-9][3]/g, "I'm sorry, Dave. But I'm afraid can't do that.");
+       digitThree = digitThree.replace(/[3][0-9]/g, "I'm sorry, Dave. But I'm afraid can't do that.");
+      output = digitThree;
 
-  if (doubleDigits.match(/[0-9][2]/g|/[3][0-9]/g)) {
-    var digitTwo = test.replace(/[0-9][2]/g, "boop");
-    var secondDigit = digitTwo.replace(/[2][0-9][0-9]/g, "boop");
-    output = secondDigit;
-  }
+  } if (doubleDigits.match(/[0-9][2]/g|/[2][0-9]/g)) {
+    var digitTwo = digitThree.replace(/[0-9][2]/g, "boop");
+     digitTwo = digitTwo.replace(/[2][0-9]/g, "boop");
+    output = digitTwo;
 
-  if (doubleDigits.match(/[0-9][1]/g|/[1][0-9]/g)){
-    var digitOne = secondDigit.replace(/[1][0-9][0-9]/g, "beep");
-    var oneDigit = digitOne.replace(/[0-9][1]/g, "beep");
-    output = oneDigit;
+  }  if (doubleDigits.match(/[0-9][1]/g|/[1][0-9]/g)){
+    var digitOne = digitTwo.replace(/[1][0-9]/g, "beep");
+    digitOne= digitOne.replace(/[0-9][1]/g, "beep");
+    output = digitOne;
   }
 
   return output;
-
 }

@@ -6,7 +6,7 @@
 
 ## Description
 
-This webpage allows the user to enter in a number. It will return a range of numbers starting from 0 to the user input. All digits containing either a 1,2, or 3 are replaced by text. Depending on the hierarchy (outlined in the specs), a digit containing a 1 will be replaced by "beep". A digit with a 2 will be replaced by a "boop". And, a digit with a 3 will be replaced by "I'm sorry Dave, but I can't do that."
+This webpage allows the user to enter in a number. It will return a range of numbers starting from 0 to the user input. All digits containing either a 1,2, or 3 are replaced by text. Depending on the hierarchy (outlined in the specs), a digit containing a 1 will be replaced by "beep". A digit with a 2 will be replaced by a "boop". And, a digit with a 3 will be replaced by "I'm sorry Dave, but I'm afraid I can't do that."
 
 ## Specs
 
@@ -37,7 +37,7 @@ This webpage allows the user to enter in a number. It will return a range of num
   * Output: boop
 
   * Input: 13, 31, 23, 33
-  * Output: "I'm sorry Dave, but I can't do that. "
+  * Output: "I'm sorry Dave, but I'm afraid I can't do that. "
 
 
 ## Setup/Installation Requirements
