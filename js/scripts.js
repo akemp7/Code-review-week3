@@ -10,8 +10,7 @@ $(document).ready(function(){
 
 ////Business Logic////
 function numberRange (numberInput) {
-  var newRange = [];;
-  var test = ''
+  var newRange = [];
   var output= ''
   for(var i=0; i<=numberInput; i++){
     newRange.push(i);
@@ -36,18 +35,18 @@ function numberRange (numberInput) {
   var doubleDigits = double;
   if (doubleDigits.match(/[0-9][3]/g|/[3][0-9]/g) ) {
       var digits = doubleDigits.replace(/[0-9][3]/g, "I'm sorry Dave, but I can't do that.");
-      var test = digits.replace(/[3][0-9]/g, "I'm sorry Dave, but I can't do that.");
+      var test = digits.replace(/[3][0-9][0-9]/g, "I'm sorry Dave, but I can't do that.");
       output = test;
   }
 
   if (doubleDigits.match(/[0-9][2]/g|/[3][0-9]/g)) {
     var digitTwo = test.replace(/[0-9][2]/g, "boop");
-    var secondDigit = digitTwo.replace(/[2][0-9]/g, "boop");
+    var secondDigit = digitTwo.replace(/[2][0-9][0-9]/g, "boop");
     output = secondDigit;
   }
 
   if (doubleDigits.match(/[0-9][1]/g|/[1][0-9]/g)){
-    var digitOne = secondDigit.replace(/[1][0-9]/g, "beep");
+    var digitOne = secondDigit.replace(/[1][0-9][0-9]/g, "beep");
     var oneDigit = digitOne.replace(/[0-9][1]/g, "beep");
     output = oneDigit;
   }
