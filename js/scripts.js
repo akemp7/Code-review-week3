@@ -20,7 +20,7 @@ function numberRange (numberInput) {
     alert("Please enter a number greater than 0 but less than 100");
   } else {
     if (digits.match(/[3]/) ) {
-      var digitThree = digits.replace(/[0-9]?[3+].?/g, "I'm sorry, Dave. But I'm afraid can't do that.");
+      var digitThree = digits.replace(/[0-9]?[3+].?/g, "I'm sorry, Dave. But I'm afraid I can't do that.");
       output = digitThree;
 
   } if (digits.match(/[2]/)) {
