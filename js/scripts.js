@@ -15,9 +15,9 @@ function numberRange (numberInput) {
     newRange.push(i);
     var numberString= newRange.toString();
   }
-  var digits = numberString; 
-  if (numberInput>100){
-    alert("Please enter a number less than 100");
+  var digits = numberString;
+  if (numberInput>100 || numberInput<0){
+    alert("Please enter a number greater than 0 but less than 100");
   } else {
     if (digits.match(/[3]/) ) {
       var digitThree = digits.replace(/[0-9]?[3+].?/g, "I'm sorry, Dave. But I'm afraid can't do that.");
