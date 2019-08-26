@@ -16,7 +16,7 @@ function numberRange (numberInput) {
     var numberString= newRange.toString();
   }
   var digits = numberString;
-  if (numberInput>100 || numberInput<0){
+  if (numberInput>100 || numberInput<=0){
     alert("Please enter a number greater than 0 but less than 100");
   } else {
     if (digits.match(/[3]/) ) {
@@ -27,9 +27,10 @@ function numberRange (numberInput) {
     var digitTwo = digitThree.replace(/[0-9]?[2+].?/g, "boop");
     output = digitTwo;
 
-  }  if (digits.match(/[1]/)){
+  } if (digits.match(/[1]/)) {
     var digitOne = digitTwo.replace(/[0-9]?[1+].?/g, "beep");
-    output = digitOne;
+    output= digitOne;
+
   }
   return output;
   }
